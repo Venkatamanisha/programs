@@ -1,1 +1,2 @@
-entered line 1
+entered line1
+new oline
