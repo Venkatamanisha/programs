@@ -1,0 +1,23 @@
+#t1,#t2,#t3,#t4,#t5,#t6,#t7,#t8,#t9{
+    width: 80px;
+        height: 52px;
+        margin: auto;
+        border: 1px solid gray;
+        border-radius: 6px;
+        font-size: 30px;
+        text-align: center;
+}
+#b1{
+    width: 80px;
+    height: 42px;
+    background-color: aqua;
+    font-size: large;
+    font-family:'Times New Roman', Times, serif;
+}
+#tictactoe{
+    margin: auto;
+}
+body{
+    background-image:url("https://thumbs.dreamstime.com/b/image-wood-texture-boardwalk-beautiful-autumn-landscape-background-free-copy-space-use-background-backdrop-to-132997627.jpg");
+    background-size:1700px;
+}
