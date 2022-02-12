@@ -1,71 +1,95 @@
 import React from 'react';
-import  ReactDOM from 'react-dom';
-import Image from 'faker'
-import style from './style.css';
+import  ReactbodyOM from 'react-dom';
+import fake from 'faker'
+import './style.css'
 
 
-function Faker1 (props){
+function Box(){
     return(
-        
-        <div class="ui cards">
-            
-            <div class='card' >
-            <div class="content">
-                <img class="right floated mini ui image" src= {Image.image.image()} alt=""/>
-                
-                <div class="header">
-                    Elliot Fu
-                </div>
-                <div class="meta">
-                    Friends of Veronika
-                </div>
-                <div class="description">Elliot requested permission to view your content
-            </div>
+     
+        <table className="ui very basic collapsing celled table" align="centre">
+               
+  <thead>
+    <tr><th>Employee</th>
+    <th>Correct Guesses</th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td>
+        <h4 className="ui image header">
+         
+        <img src={fake.image.image()} alt="" className="ui mini rounded image"/>
+          <div className="content">
+            Lena
+            <div className="sub header">Human Resources
+          </div>
         </div>
-        <div className='extra content'>
-            <div className='ui two buttons'>
-                <div className='ui basic green button'>{props.accept?"yes":"No"}</div>
-                <div className='ui basic red button'>Decline</div>
-            </div>
+      </h4></td>
+      <td>
+        22
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 className="ui image header">
+         
+        <img src={fake.image.image()} alt="" className="ui mini rounded image"/>
+          <div className="content">
+            Matthew
+            <div className="sub header">Fabric Design
+          </div>
         </div>
-        </div>,
-        
-        <div class="ui cards">
-            
-        <div class='card'>
-        <div class="content">
-            <img class="right floated mini ui image" src= {Image.image.image()} alt=""/>
-            
-            <div class="header">
-Jenny Hess
-            </div>
-            <div class="meta">
-                New Member
-            </div>
-            <div class="description">Jenny wants to add you to the group best friends
+      </h4></td>
+      <td>
+        15
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 className="ui image header">
+          <img src={fake.image.image()} alt="" className="ui mini rounded image"/>
+          <div className="content">
+            Lindsay
+            <div className="sub header">Entertainment
+          </div>
         </div>
-    </div>
-    
-    <div className='extra content'>
-        <div className='ui two buttons'>
-            <div className='ui basic green button'>{props.decline?"Yes":"No"}</div>
-            <div className='ui basic red button'>Decline</div>
+      </h4></td>
+      <td>
+        12
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 className="ui image header">
+          
+        <img src={fake.image.image()} alt="" className="ui mini rounded image"/>
+          <div className="content">
+            Mark
+            <div className="sub header">Executive
+          </div>
         </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    
-        
+      </h4></td>
+      <td>
+        11
+      </td>
+    </tr>
+  </tbody>
+  
+</table>
+
     )
 }
 
-ReactDOM.render(
-    <>
+        
+
+
+ReactbodyOM.render(
+    <div>
        
-       <Faker1  name="manisha" accept={true} decline={false}/>
+     <Box/>  
+     
     
-    </>,
+    </div>,
     
     document.getElementById('root')
 
