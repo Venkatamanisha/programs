@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome!to making of videogallery</h1>
+        <div class="row">
+            <div class="col">
+                <div class="image1">
+                    <img src="https://www.groovypost.com/wp-content/uploads/2019/07/sunset-beach-phone-photos-featured.jpg" width="100%">
+                    <img src="https://thumbs.dreamstime.com/b/play-button-web-audio-icon-blue-vector-illustration-isolated-white-background-118054472.jpg" class="play-btn" onclick="playvideo('Creatures Underwater.mp4')">
+                </div>
+            </div>
+            <div class="col">
+                <div class="image2">
+                    <div class="image2-details">
+
+                        <img src="https://image.shutterstock.com/image-photo/woman-professional-photographer-photo-camera-260nw-731977516.jpg" >
+                        <img src="https://thumbs.dreamstime.com/b/play-button-web-audio-icon-blue-vector-illustration-isolated-white-background-118054472.jpg" class="play-btn" onclick="playvideo('Nature - 105936 (1).mp4')">
+                     
+                    </div>
+                    <p>How to add images to video gallery</p>
+                </div>
+                 <div class="image2">
+                    <div class="image3-details">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr6ZePeVI7ER7NEUld0NPbZqDGCqRPQb-SBGLseO3qUo8yAAYU4MpXoOD-9xhlkzXumeE&usqp=CAU" >
+                     <img src="https://thumbs.dreamstime.com/b/play-button-web-audio-icon-blue-vector-illustration-isolated-white-background-118054472.jpg" class="play-btn" onclick="playvideo('Pexels Videos 2845.mp4')">
+                    </div>
+                    <p>How to add images to video gallery</p>
+                </div>
+                <div class="image2">
+                    <div class="image4-details">
+                        <img src="https://cdn.xxl.thumbs.canstockphoto.com/beautiful-photographer-girl-with-a-camera-in-his-hands-stands-in-the-park-in-the-autumn-and-takes-stock-photo_csp62757923.jpg" >
+                     <img src="https://thumbs.dreamstime.com/b/play-button-web-audio-icon-blue-vector-illustration-isolated-white-background-118054472.jpg" class="play-btn" onclick="playvideo('Pexels Videos 1171471.mp4')">
+                    </div>
+                    <p>How to add images to video gallery</p>
+                </div>
+                 </div>
+                   
+            </div>
+        </div>
+    </div>
+    <div class="video-player" id="videoplayer">
+        <video width="100%" controls autoplay id="myvideo">
+            <source src="Creatures Underwater.mp4"  type="video/mp4">
+            <source src="Nature - 105936 (1).mp4" type="video/mp4">
+            <source src="Pexels Videos 2845.mp4" type="video/mp4">
+            <source src="Pexels Videos 1171471.mp4" type="video/mp4">
+            
+        </video>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUvJoJ8NC9BoIVIm1DVBB7wfm0vWr-kG7Qig&usqp=CAU" class="close-btn" onclick="stopvideo()">
+    </div>
+    <script>
+        var videoplayer=document.getElementById("videoplayer");
+        var myvideo=document.getElementById("myvideo");
+        function stopvideo(){
+            videoplayer.style.display="none";
+        }
+        function playvideo(file){
+            myvideo.src=file;
+            videoplayer.style.display="block";
+        }
+        </script>
+</body>
+</html>
